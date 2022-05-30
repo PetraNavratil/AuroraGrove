@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Project - Aurora Grove</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">  <!--odkaz na font-->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> <!--odkaz na font-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> <!--odkaz na ikony-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> <!--odkaz na bootstrap-->
+
+    <link rel='stylesheet' type="text/css" href='css/custom.css'>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand"><h3 class="mb-0">Aurora grove</h3>  </a>       <!--logo firmy -->
+
+    <!--ikona do které se nám schovají odkazy při malém rozlišení - kód přímo z bootstrap.com -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>  
+        </button> <!--dodat do data-target - co se má do ikony schovat-->
+
+        <div class="collapse navbar-collapse" id="mainNav"> <!--odkazy v navigačním pruhu, které budou kolabovat do ikony - jim musím dát ID, abych to mohla propojit s ikonou -->
+            <ul class="navbar-nav ml-auto">                         <!--posunutí seznamu doleva ml = margin left-->
+                <li class="nav-item"><a href="#" class="nav-link"> Home</a>   </li>
+                <li class="nav-item"><a href="#about" class="nav-link"> About</a>   </li>
+                <li class="nav-item"><a href="#cards" class="nav-link"> Explore</a>   </li>
+                <li class="nav-item"><a href="#quotes" class="nav-link"> Contacts</a>   </li>
+                <li class="nav-item"><a href="#" class="nav-link"> Book</a>   </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase" class="d-flex justify-content-center align-items-center">                     <!--pro podsunutí obrázku -->
+        <div id="overlay"></div>
+
+        <div id="header" class="container text-white text-center">
+            <h3 class="mb-0"> modern camping</h3>
+            <h1 class="display-1">Aurora Grove</h1>
+            <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur cupiditate ipsam expedita culpa laborum?</p>
+            <button class="btn btn-lg btn-primary px-5" id="book" data-toggle="modal" data-target="#booking">Book now</button> <!--přidání modalu k tlačítku, aby po zmáčknutý "vyskočil" data-toggle a data-target-->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container text-center mt-5">
+            <h2>You show up we pitch the tent</h2>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/tent.png" alt="tent" class="img-fluid d-none d-md-inline">
+                    <h3>Acomodation</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, explicabo in fugit nemo a ipsam sunt quis commodi. Nobis nihil repudiandae velit eos architecto asperiores.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/campfire.png" alt="tent" class="img-fluid d-none d-md-inline">
+                    <h3>Food</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, explicabo in fugit nemo a ipsam sunt quis commodi. Nobis nihil repudiandae velit eos architecto asperiores.</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/nature.png" alt="tent" class="img-fluid d-none d-md-inline">
+                    <h3>Nature</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, explicabo in fugit nemo a ipsam sunt quis commodi. Nobis nihil repudiandae velit eos architecto asperiores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards">
+        <div class=" container text-center mt-2 p-3"> 
+            <h3>We have created camping experience</h3>
+            <div class="row m-2">
+                    <div class="col-md-6 p-3">
+                        <div class="card pb-4">
+                            <img src="images/winter.png" alt="winter" class="card-image-top">
+                            <div class="body">
+                                <h2 class="card-title text-primary pt-4">Experience</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nemo ratione provident, omnis, incidunt itaque laudantium soluta possimus recusandae nulla accusantium minima eius expedita voluptates.</p>
+                                <a href="#" class="btn btn-lg btn-outline-primary"> Click me!</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="card pb-4">
+                            <img src="images/dogs.png" alt="winter" class="card-image-top">
+                            <div class="body">
+                                <h2 class="card-title text-primary pt-4">Experience</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nemo ratione provident, omnis, incidunt itaque laudantium soluta possimus recusandae nulla accusantium minima eius expedita voluptates.</p>
+                                <a href="#" class="btn btn-lg btn-outline-primary"> Click me!</a>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </section> 
+
+
+    <section id="quotes">
+        <div class="container text-center">
+            <h3>What our capers are saying</h3>
+            <div class="row ">
+                <div class="col-md-4">
+                    <i class="bi bi-chat-square-quote h1 mb-3 text-primary"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero necessitatibus repellendus culpa adipisci ea tenetur, quidem dolore quae eveniet dolores, velit tempora, quod at?</p>
+                        <footer class="blockquote-footer">Aneta</footer>
+                    </blockquote>
+                </div>
+            
+           
+            <div class="col-md-4">
+                <i class="bi bi-chat-square-quote h1 mb-3 text-primary"></i>
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero necessitatibus repellendus culpa adipisci ea tenetur, quidem dolore quae eveniet dolores, velit tempora, quod at?</p>
+                    <footer class="blockquote-footer">Luke</footer>
+                </blockquote>
+            </div>
+      
+        
+                <div class="col-md-4">
+                    <i class="bi bi-chat-square-quote h1 mb-3 text-primary"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque libero necessitatibus repellendus culpa adipisci ea tenetur, quidem dolore quae eveniet dolores, velit tempora, quod at?</p>
+                        <footer class="blockquote-footer">Hannah</footer>
+                    </blockquote>
+                </div>
+            </div> 
+
+        </div>
+    </section>
+ 
+    <section id="carousel">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div id="mainCarousel" class="caroousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/slider/caribou.png" alt="caribou" class="d-block w-100">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/slider/coffee.png" alt="caribou" class="d-block w-100">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/slider/fire.png" alt="caribou" class="d-block w-100">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/slider/trees.png" alt="caribou" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <h3>CAMPING MADE COZY</h3>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem enim tempore distinctio deleniti, accusantium nemo inventore adipisci a dicta voluptatem quas magni illo nobis quibusdam dolor quae exercitationem error qui quis. Accusantium animi sed officia facilis ab id beatae maxime.</p>
+                    <a href="#"> See for yourself <i class="bi bi-arrow-right-square"></i>  </a>
+                </div>
+
+            </div>
+        </div>
+
+    <section id="gallery">
+        <div class="container text-center mt-5">
+            <h3>WHAT OTHERS ARE saying</h3>
+            <h5 class="text-primary">Něco něco</h5>
+            <div class="row mt-4">
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social1.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social2.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social3.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social4.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social5.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social6.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social7.png" alt="" class="img-fluid">  </div>
+                <div class="col-6 col-lg-3 mb-4"> <img src="images/gallery/social8.png" alt="" class="img-fluid">  </div>
+            </div>
+
+            <div class="container text-center">
+                <i class="bi bi-quote"></i>
+                <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi praesentium, eos maxime ipsum quas consectetur molestias dolorum sunt aperiam doloribus. Assumenda exercitationem in consectetur omnis animi, temporibus velit quidem natus! Nobis porro laborum, totam quod laboriosam perferendis earum at natus modi magni asperiores vitae accusamus non! Ducimus veniam provident neque.</blockquote>
+
+            </div>
+               
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container text-center text-white py-5">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolore reiciendis amet veritatis non ea dicta sunt libero nam temporibus distinctio iusto beatae asperiores a, nostrum ducimus sit assumenda est quod, earum corrupti? Et, adipisci.</p>
+            
+            <div class="row justify-content-center">  <!--vycentrování formuláře - vytvoření divu-->
+                <div class="col-10 col-sm-8 col-md-6">
+                    <form action="" class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="your email here">
+                            <div class="input-group append">
+                                <button class="btn btn-primary">join now</button>
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="bg-secondary"> 
+        <ul class="nav text-center justify-content-center flex-column flex-md-row">
+            <li class="nav-item"> <a href="#" class="nav-link text-white"> FAQ</a>  </li>
+            <li class="nav-item"> <a href="#" class="nav-link text-white"> Experience</a>  </li>
+            <li class="nav-item"> <a href="#" class="nav-link text-white"> ahoj</a>  </li>
+            <li class="nav-item"> <a href="#" class="nav-link text-white"> ahoj</a>  </li>
+            <li class="nav-item"> <a href="#" class="nav-link text-white"> ahoj</a>  </li>
+        </ul>
+    </section>
+
+    <section id="map">
+        <div class="container-fluid"> <!--container-fluid - zabírá 100% prostoru, obyčejný container - přednastavené rozměry-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.2549649648313!2d-79.4490634982901!3d43.99466594313897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ad38d2194faed%3A0x2f34ecfa915a41f8!2sAurora%20Grove%20Public%20School!5e0!3m2!1scs!2scz!4v1653907976211!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!--modal - -->
+    <div class="modal" id="booking" tabindex="-1" role="dialog"> <!--tabindex = ve výchozím stavu není vidět; role = -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>new booking</h5>
+                    <button class="close" data-dismiss="modal" aria-label="close"> <span aria-hidden="true">&times</span>
+                    </button>     <!--zavírací tlačítko-->
+                </div>
+
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quos amet! Voluptas, totam voluptatum error, harum reiciendis omnis ab possimus itaque fugit pariatur, doloremque fugiat.</p>
+
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email">email-adress</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@domain">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adults">Number of adults</label>
+                            <select id="adults" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                                <option value="4">1</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="children">Number of children</label>
+                            <select id="adults" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">1</option>
+                                <option value="3">1</option>
+                                <option value="4">1</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Aditional requests</label>
+                            <textarea name="requests" id="requests" columns="50" rows="10"></textarea>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary"> submit request </button>
+                    <button class="btn btn-secondary">close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--prolinkování s Java Scriptem-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
